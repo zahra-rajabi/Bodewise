@@ -1,0 +1,53 @@
+/**************
+ Fonts 
+ **************/
+@font-face {
+  font-family: "Neovix";
+  src: url(../fonts/Neovix\ Basic.otf) format(opentype);
+}
+@font-face {
+  font-family: "Neovix bold";
+  font-weight: bold;
+  src: url(../fonts/Neovix\ Basic\ Bold.otf) format(opentype);
+}
+/* 
+ */
+/* colors:
+text color: #000
+ main color: #d7d0c8
+ hover on link: #6c6864
+ blockqoute background :#9f978d
+ */
+/**************
+ General code
+ **************/
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
+}
+body {
+  font-family: "Neovix", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+/**************
+grids code 
+**************/
+.grid {
+  display: grid;
+  column-gap: 9.6rem;
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
